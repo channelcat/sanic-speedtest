@@ -32,5 +32,6 @@ RUN pip install -r /req && rm /req
 
 ADD . /code
 
+EXPOSE 80
 WORKDIR /code
 CMD ["python", "main.py"]

@@ -8,7 +8,7 @@ app = Sanic('sanic-tester')
 
 app.static('/', 'index.html')
 
-@app.get('/tests/<commit:[A-Za-z0-9]+>')
+@app.get('/test/<commit:[A-Za-z0-9]+>')
 async def test(request, commit):
 	global RUNNING
 	if RUNNING:
